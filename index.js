@@ -7,10 +7,9 @@ const uuidv4 = require('uuid/v4');
 module.exports = function(options){
 
   let busy = false;
-
   options.dir = path.resolve(options.dir);
-
-  watch.watchTree(options.dir, function (f, curr, prev) {
+  if(options.watch) {
+    watch.watchTree(options.dir, function (f, curr, prev) {
     if (typeof f == "object" && prev === null && curr === null) {
      // Finished walking the tree
      reshape(options);
@@ -25,6 +24,9 @@ module.exports = function(options){
      reshape(options)
     }
   });
+  } else {
+    reshape(options);
+  }
 
   function reshape(options){
 
