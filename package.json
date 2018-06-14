@@ -1,0 +1,25 @@
+{
+  "name": "thunderdome",
+  "version": "1.0.0",
+  "description": "Infinite number of files enter, only -n files stay, first in - last out.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fantasyui-com/thunderdome.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fantasyui-com/thunderdome/issues"
+  },
+  "homepage": "https://github.com/fantasyui-com/thunderdome#readme",
+  "dependencies": {
+    "chickpea": "^1.5.0",
+    "uuid": "^3.2.1",
+    "watch": "^1.0.2"
+  }
+}
