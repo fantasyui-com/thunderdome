@@ -20,7 +20,7 @@
   "homepage": "https://github.com/fantasyui-com/thunderdome#readme",
   "dependencies": {
     "chickpea": "^1.9.0",
-    "uuid": "^3.3.3",
+    "uuid": "^14.0.0",
     "watch": "^0.13.0"
   }
 }
